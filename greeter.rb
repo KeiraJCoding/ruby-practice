@@ -33,7 +33,7 @@ class Pizza
     end
 
     def first 
-        puts "Your first topping is " + @topping1
+        return "Your first topping is " + @topping1
     end
 
     def second
