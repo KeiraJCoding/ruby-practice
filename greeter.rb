@@ -118,3 +118,28 @@ puts car1.year
 puts "First car is a #{car1.year}#{car1.make}#{car1.name}"
 puts "Second car is a #{car2.year}#{car2.make}#{car2.name}"
 puts "Third car is a #{car3.year}#{car3.make}#{car3.name}"
+
+class Cats 
+    def initialize(name, colour, gender)
+        @colour = colour
+        @name = name
+        @gender = gender
+    end
+    def name
+        return @name
+    end
+    def colour
+        return @colour
+    end
+    def gender
+        return @gender
+    end
+end
+
+cat1 = Cats.new("Twizzle", "Ginger", "Female")
+cat2 = Cats.new("Clementine", "Calico", "Female")
+cat3 = Cats.new("Pi", "Dark Tortie", 'Female')
+
+puts "The first cats name is #{cat1.name} and the cat is a #{cat1.gender} and the markings are #{cat1.colour}"
+puts "The first cats name is #{cat2.name} and the cat is a #{cat2.gender} and the markings are #{cat2.colour}"
+puts "The first cats name is #{cat3.name} and the cat is a #{cat3.gender} and the markings are #{cat3.colour}"
