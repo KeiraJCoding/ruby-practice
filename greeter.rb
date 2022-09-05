@@ -106,13 +106,16 @@ class Cars
     def year
         return @year
     end
+    def all
+        return @name +", "+ @make + ", "+ @year
+    end
 end
 
 car1 = Cars.new(" Corolla", " Toyota", "1999 ")
 car2 = Cars.new(" Mustang", " Ford", "1983 ")
 car3 = Cars.new(" Prius", " Toyota", "2010 ")
 
-puts car1.name
+puts car1.all
 puts car1.make
 puts car1.year
 puts "First car is a #{car1.year}#{car1.make}#{car1.name}"
